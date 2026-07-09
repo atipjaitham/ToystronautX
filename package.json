@@ -1,0 +1,13 @@
+{
+    "name": "toystronautx",
+    "private": true,
+    "workspaces": [
+        "apps/*"
+    ],
+    "scripts": {
+        "dev:web": "npm --prefix apps/web run dev",
+        "dev:api": "npm --prefix apps/api run start:dev",
+        "build:web": "npm --prefix apps/web run build",
+        "build:api": "npm --prefix apps/api run build"
+    }
+}

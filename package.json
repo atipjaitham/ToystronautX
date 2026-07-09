@@ -1,13 +1,11 @@
 {
     "name": "toystronautx",
     "private": true,
-    "workspaces": [
-        "apps/*"
-    ],
+    "packageManager": "pnpm@10.15.0",
     "scripts": {
-        "dev:web": "npm --prefix apps/web run dev",
-        "dev:api": "npm --prefix apps/api run start:dev",
-        "build:web": "npm --prefix apps/web run build",
-        "build:api": "npm --prefix apps/api run build"
+        "dev:web": "pnpm --dir apps/web run dev",
+        "dev:api": "pnpm --dir apps/api run start:dev",
+        "build:web": "pnpm --dir apps/web run build",
+        "build:api": "pnpm --dir apps/api run build"
     }
 }

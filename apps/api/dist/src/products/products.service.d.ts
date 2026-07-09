@@ -7,50 +7,13 @@ export declare class ProductsService {
         category?: string;
         search?: string;
     }): Promise<{
-        products: {
-            id: any;
-            name: any;
-            slug: any;
-            price: any;
-            description: any;
-            image: any;
-            featured: any;
-            categoryName: any;
-            categorySlug: any;
-        }[];
-    } | {
-        products: import("../mock-data").ProductDto[];
+        products: any;
     }>;
     getFeaturedProducts(): Promise<{
-        products: {
-            id: any;
-            name: any;
-            slug: any;
-            price: any;
-            description: any;
-            image: any;
-            featured: any;
-            categoryName: any;
-            categorySlug: any;
-        }[];
-    } | {
-        products: import("../mock-data").ProductDto[];
+        products: any;
     }>;
     getCategories(): Promise<{
-        categories: {
-            id: string;
-            name: string;
-            slug: string;
-            description: string | null;
-            createdAt: Date;
-            updatedAt: Date;
-        }[];
-    } | {
-        categories: {
-            name: string;
-            slug: string;
-            description: string;
-        }[];
+        categories: any;
     }>;
     getProductBySlug(slug: string): Promise<{
         message: string;
